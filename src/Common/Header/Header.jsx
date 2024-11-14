@@ -5,7 +5,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-900 text-white p-4 flex justify-between items-center">
+    <header className="bg-gradient-to-b from-[#1a1a6e] to-[#2C2B55] text-white p-4 flex justify-between items-center fixed top-0 left-0 w-full z-50">
       <div className="text-2xl font-bold">Genius</div>
 
       {/* Hamburger Icon for Mobile */}

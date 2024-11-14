@@ -1,9 +1,21 @@
-import { Outlet, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import {
+  Outlet,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
 import { AuthProvider } from "../Context/AuthContext";
-import { Dashboard, Error1, Home, Login, ScrollToTop } from "/src/Widget/import/PublicImport";
+import {
+  Dashboard,
+  Error1,
+  // Home,
+  Login,
+  ScrollToTop,
+} from "/src/Widget/import/PublicImport";
 import PrivateLayout from "../Layout/PrivateLayout";
 import PublicLayout from "../Layout/PublicLayout";
 import PrivateRouter from "../Router/PrivateRouter";
+import { Hero } from "../import/PublicImport";
 
 const PublicRouter = () => {
   return (
@@ -16,7 +28,7 @@ const PublicRouter = () => {
             path="/"
             element={
               <PublicLayout>
-                <Home />
+                <Hero />
               </PublicLayout>
             }
           />
